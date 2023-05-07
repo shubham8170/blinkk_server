@@ -12,6 +12,7 @@ const pushNotification = async () => {
         for (let user of users) {
             let token = user.browser_token;
             if (token) {
+                console.log('token -----------> ', token);
                 await sendNotification(token);
             }
         }
