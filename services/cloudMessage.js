@@ -23,7 +23,7 @@ const pushNotification = async () => {
 }
 
 (async function () {
-    cron.schedule('*/10 * * * * *', async () => {
+    cron.schedule('0 * * * *', async () => {
         await pushNotification();
     });
 })();
