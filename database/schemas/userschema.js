@@ -20,6 +20,9 @@ const userSchema = new mongoose.Schema({
     },
     otp: {
         type: String
+    },
+    browser_token:{
+        type:String
     }
 });
 
